@@ -1,5 +1,7 @@
 module.exports = {
+  publicPath: '/OnlineDatingApp',
   outputDir: 'docs',
   assetsDir: './',
-  publicPath: './',
+  filenameHashing: false,
+  productionSourceMap: false,
 }
