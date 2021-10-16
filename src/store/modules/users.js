@@ -1,6 +1,7 @@
 export default{
   state: {
     users: [],
+    me: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxH3o5f17r7jtfjqI4p6FdxmE8LhPhwCOgS4-rhGp5hVZLLCuTA2ztRqSupm4FEC_TgQ&usqp=CAU',
   },
   mutations: {
     // stateのusersの値を変更

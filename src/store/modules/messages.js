@@ -10,12 +10,13 @@ export default {
   },
   mutations: {
     setMessages(state, payload) {
-      // let messagesLen = Object.keys(state.messages).length;
-      // if (messagesLen !== 0) return;
-      if (state.messages[payload.id] === undefined) state.messages[payload.id] = [payload.message];
-      else state.messages[payload.id].push(payload.message);
+      let date = payload.date;
+      let now = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + " " + date.getHours() + ":"
+          + date.getMinutes();
+      if (state.messages[payload.id] === undefined) state.messages[payload.id] = [[payload.message, now]];
+      else state.messages[payload.id].push([payload.message, now]);
       let num = Math.floor(Math.random() * (4 - 1) + 1);
-      state.messages[payload.id].push(state.defMessages[num]);
+      state.messages[payload.id].push([state.defMessages[num], now]);
     }
   },
   getters: {
