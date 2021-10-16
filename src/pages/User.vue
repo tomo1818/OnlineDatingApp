@@ -30,6 +30,14 @@
   }
 </script>
 
+<style>
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
 <style scoped>
   .card-one {
     width: calc((100% - 90px) / 4);
@@ -47,5 +55,19 @@
   .card-one:hover {
     text-decoration: none;
     opacity: 0.8;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-one {
+      width: calc((100% - 20px) / 2);
+      height:100%;
+      color: #333;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      box-shadow: 5px 5px 10px #333;
+    }
+    .card-one:nth-child(2n) {
+      margin-right: 0px;
+    }
   }
 </style>

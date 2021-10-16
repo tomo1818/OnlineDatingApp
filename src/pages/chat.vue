@@ -47,7 +47,6 @@ export default ({
   },
   methods: {
     sendMessage() {
-      console.log(this.currMessage);
       this.$store.commit('setMessages', {id: this.$route.params.userId, message: this.currMessage, date: new Date()});
       this.messages = this.$store.state.messages.messages[this.$route.params.userId];
       this.currMessage = '';
@@ -64,7 +63,7 @@ export default ({
   .chat-box .message-box {
     text-align: left;
   }
-  
+
   .chat-box:nth-child(2n) .message-box .time {
     text-align: right;
   }

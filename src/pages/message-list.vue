@@ -34,7 +34,6 @@ export default({
       return message[len - 1];
     },
     getUserImage(id) {
-      console.log(id)
       return this.$store.getters.getUserById(id).picture
     }
   }
