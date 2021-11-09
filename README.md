@@ -2,7 +2,7 @@
 
 ## 概要
 
-オンラインの学習プラットフォームであるRecursion内での課題作品。  
+オンラインの学習プラットフォームであるRecursion内でのプロジェクト作品。  
 簡易なチャットアプリです。[外部API](https://randomuser.me/)を用いてランダムなユーザーを表示し、それぞれのユーザーに対してメッセージを送信することができる。今回はこちらからメッセージを送信すると自動で特定のメッセージが相手から送信される仕様にした。
 
 Vue Cliを用いて開発を行った。状態管理、ルーティングはそれぞれvue.jsのVuex、Routerを用いて行い、SPAとした。
@@ -28,7 +28,7 @@ https://tomo1818.github.io/OnlineDatingApp/
 
 ## フレームワーク
 
-* Vue.js
+* Vue.js(Vue2)
   * Router
   * Vuex
 * Bootstrap
